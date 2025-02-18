@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Iridescence from './Iridescence'
-import Carousel from './Carousel'
 function HeroSection() {
   return (
     <>
