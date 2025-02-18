@@ -21,14 +21,7 @@ function HeroSection() {
 <div className='flex flex-col w-[21%]'>
 
     <div className='rounded-full border-2 border-white w-full aspect-square'>
-    <Carousel
-    baseWidth={300}
-    autoplay={true}
-    autoplayDelay={3000}
-    pauseOnHover={true}
-    loop={true}
-    round={false}
-  />
+   
     </div>
 
 </div>
