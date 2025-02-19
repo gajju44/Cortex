@@ -31,10 +31,10 @@ function HeroSection() {
   return (
     <>
         <Navbar/>
-        <div className='pb-6 flex gap-4 px-10 pt-3 '>
+        <div className='pb-6 flex flex-col lg:flex-row items-center lg:items-stretch gap-4 px-10 pt-3 '>
        
        {/*Wave*/}
-        <div className='w-[78%] relative z-0  rounded-e-[35px] h-[96vh] overflow-hidden '>
+        <div className='w-full lg:w-[78%] relative z-0  rounded-e-[35px] h-[96vh] overflow-hidden '>
         <Iridescence
   color={[0.4, 0.8, 0.9]}
   mouseReact={false}
@@ -42,7 +42,7 @@ function HeroSection() {
   speed={0.5}
 />
 
-<div className='text-5xl w-[52%] text-white pl-0 pr-10 h-[38vh] rounded-se-[30px]  bg-black p-4 absolute z-20 bottom-0'>
+<div className='text-5xl w-[547px] text-white pl-0 pr-10 h-[38vh] rounded-se-[30px]  bg-black p-4 absolute z-20 bottom-0'>
       Equal parts creative developer & designer
 
       <img src={CornerSvg} alt="" className=' absolute -top-[30px] -rotate-90 left-0' />
@@ -54,14 +54,14 @@ function HeroSection() {
 
 
 {/* Right side component */}
-<div className='flex flex-col items-center justify-between w-[21%]'>
+<div className='flex flex-col items-center justify-between gap-4 w-full lg:w-[28%] xl:w-[21%]'>
 
    <CircleCrousel/>
 
 
 <div className='flex flex-col custom-carousel items-center w-full justify-center relative bg-[#5d55fa]  p-4 rounded-3xl text-white '>
 
-<Slider {...sliderSettings} className=' w-full h-[50vh]'>
+<Slider {...sliderSettings} className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'>
 
 
 <div className='!flex flex-col  gap-4'>

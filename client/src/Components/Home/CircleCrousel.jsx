@@ -16,20 +16,20 @@ function CircleCrousel() {
       
   return (
    <>
-   <Slider {...sliderSettings} className=' rounded-full border-2 p-10 border-white w-full aspect-square'>
-    <div className='w-full h-full !flex flex-col items-center justify-center aspect-square text-white'>
+   <Slider {...sliderSettings} className=' rounded-3xl lg:rounded-full h-48 lg:h-auto border-2 p-10 border-white w-full lg:aspect-square'>
+    <div className='w-full lg:h-full !flex flex-col items-center justify-center lg:aspect-square text-white'>
       <h1 className='text-5xl mb-1 text-center font-extrabold'>Event 1</h1>
       <p className='text-center text-gray-300'>Tagline of this particular event</p>
       </div>  
-    <div className='w-full h-full !flex flex-col items-center justify-center aspect-square text-white'>
+    <div className='w-full lg:h-full !flex flex-col items-center justify-center lg:aspect-square text-white'>
       <h1 className='text-5xl mb-1 text-center font-extrabold'>Event 2</h1>
       <p className='text-center text-gray-300'>Tagline of this particular event</p>
       </div>  
-    <div className='w-full h-full !flex flex-col items-center justify-center aspect-square text-white'>
+    <div className='w-full lg:h-full !flex flex-col items-center justify-center lg:aspect-square text-white'>
       <h1 className='text-5xl mb-1 text-center font-extrabold'>Event 3</h1>
       <p className='text-center text-gray-300'>Tagline of this particular event</p>
       </div>  
-    <div className='w-full h-full !flex flex-col items-center justify-center aspect-square text-white'>
+    <div className='w-full lg:h-full !flex flex-col items-center justify-center lg:aspect-square text-white'>
       <h1 className='text-5xl mb-1 text-center font-extrabold'>Event 4</h1>
       <p className='text-center text-gray-300'>Tagline of this particular event</p>
       </div>  
