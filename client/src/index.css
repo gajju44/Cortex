@@ -5,3 +5,38 @@
 body{
     background-color: black;
 }
+
+.slick-dots{
+    bottom: 40px !important;
+    left: 0;
+  }
+  .slick-dots li button:before{
+    font-size: 12px !important;
+    color: white !important;
+   
+  }
+
+.custom-dot {
+    width: 25px;
+    height: 6px;
+    border-radius: 50px; 
+    background-color: #b8b8b879;
+    transition: background-color 0.3s ease;
+    
+  }
+  .slick-dots .custom-dot {
+    bottom: -25px !important;
+    
+  }
+  
+  .slick-dots li.slick-active .custom-dot {
+    background-color: #ffff;
+  }
+  
+  .custom-carousel .slick-dots {
+    position: absolute;
+    bottom: -10px !important; 
+    left: -50px;
+  }
+  
+  
