@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Iridescence from './Iridescence'
 import CircleCrousel from './CircleCrousel';
 import ReactLogo from '../../assets/React.svg'
+import ChallangeX from '../../assets/Events/ChallangeX.svg'
 import { ArrowUpRight } from 'lucide-react';
 import CornerSvg from '../../assets/CornerSvg.svg'
 import Slider from "react-slick";
@@ -64,21 +65,22 @@ function HeroSection() {
 
 
 <div className='!flex flex-col  gap-4'>
-<img src={ReactLogo} alt="" className='bg-black rounded-2xl' />
-<p className='text-2xl p-1'>Getting started with WebGL shaders in JavaScript.</p>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
-<div className='!flex flex-col h-[50vh] gap-4'>
-<img src={ReactLogo} alt="" className='bg-black rounded-2xl' />
-<p className='text-2xl p-1'>Getting started with WebGL shaders in JavaScript.</p>
+<div className='!flex flex-col  gap-4'>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
-<div className='!flex flex-col h-[50vh] gap-4'>
-<img src={ReactLogo} alt="" className='bg-black rounded-2xl' />
-<p className='text-2xl p-1'>Getting started with WebGL shaders in JavaScript.</p>
+<div className='!flex flex-col  gap-4'>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
-<div className='!flex flex-col h-[50vh] gap-4'>
-<img src={ReactLogo} alt="" className='bg-black rounded-2xl' />
-<p className='text-2xl p-1'>Getting started with WebGL shaders in JavaScript.</p>
+<div className='!flex flex-col  gap-4'>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
+
 
 </Slider>
 
