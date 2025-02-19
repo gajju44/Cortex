@@ -31,7 +31,7 @@ function HeroSection() {
   return (
     <>
         <Navbar/>
-        <div className='pb-6 flex flex-col lg:flex-row items-center lg:items-stretch gap-4 px-10 pt-3 '>
+        <div className='pb-6 flex flex-col lg:flex-row items-center  lg:items-stretch gap-4 px-5 md:px-10 pt-3 '>
        
        {/*Wave*/}
         <div className='w-full lg:w-[78%] relative z-0  rounded-e-[35px] h-[96vh] overflow-hidden '>
@@ -42,11 +42,11 @@ function HeroSection() {
   speed={0.5}
 />
 
-<div className='text-5xl w-[547px] text-white pl-0 pr-10 h-[38vh] rounded-se-[30px]  bg-black p-4 absolute z-20 bottom-0'>
+<div className=' text-[8vw] lg:translate-x-[-1px] font-bold sm:font-normal sm:text-5xl w-[68%] sm:w-[72%] md:w-[84%] lg:w-[80%] xl:w-[51%] text-white pl-0 pr-10 h-[4] md:h-[38vh] rounded-se-[30px]  bg-black p-4 absolute z-20 -bottom-[1px] -left-[1px] '>
       Equal parts creative developer & designer
 
-      <img src={CornerSvg} alt="" className=' absolute -top-[30px] -rotate-90 left-0' />
-      <img src={CornerSvg} alt="" className=' absolute -bottom-0 -rotate-90 -right-[30px]' />
+      <img src={CornerSvg} alt="" className=' absolute -top-[30px] lg:-top-[29px] -rotate-90 left-[1px] xl:left-[2px]' />
+      <img src={CornerSvg} alt="" className=' absolute -bottom-0  -rotate-90 -right-[30px] lg:-right-[29.3px]' />
 
       </div>
 
@@ -84,11 +84,11 @@ function HeroSection() {
 
 </Slider>
 
-<div className='absolute  -bottom-2 bg-black p-2 rounded-ss-[34px] right-0 '>
+<div className='absolute lg:translate-x-[1px]  -bottom-2 bg-black p-2 rounded-ss-[34px] right-0 '>
 <div className='flex items-center border-2 border-white relative justify-center p-3 bg-black rounded-full'>
 <ArrowUpRight/>
-<img src={CornerSvg} alt="" className=' absolute -bottom-[2px] rotate-180 -left-10' />
-<img src={CornerSvg} alt="" className=' absolute -top-10 rotate-180 -right-[10px]' />
+<img src={CornerSvg} alt="" className=' absolute -bottom-[3px] rotate-180 -left-[39px]' />
+<img src={CornerSvg} alt="" className=' absolute -top-[39px] rotate-180 -right-[10px]' />
 
 </div>
 </div>
