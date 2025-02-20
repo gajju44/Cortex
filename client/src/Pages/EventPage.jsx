@@ -81,8 +81,9 @@ export default function EventPage() {
                     >
                       Register Event
                     </Link>
-                    <button
-                      className="px-4 py-3 rounded-lg w-full border transition duration-500"
+                    <a
+                     href={`/events-details?Data=${encodeURIComponent(JSON.stringify(currentSlide))}`}
+                      className="px-4 py-3 flex items-center justify-center rounded-lg w-full border transition duration-500"
                       style={{
                         borderColor: `${themeColor}`, // 50 opacity
                         color: themeColor,
@@ -95,7 +96,7 @@ export default function EventPage() {
                       }}
                     >
                       Learn More
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
