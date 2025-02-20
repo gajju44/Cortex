@@ -66,7 +66,7 @@ export default function EventPage() {
                   </ul>
                   <div className="flex flex-col w-full gap-3 sm:gap-4">
                     <Link
-                      to="/"
+                      to="https://forms.gle/sajMGmmqztN9kHh5A"
                       className="inline-flex items-center w-full justify-center px-4 py-3 rounded-lg text-black font-medium transition duration-500"
                       style={{
                         backgroundColor: themeColor,
@@ -121,7 +121,7 @@ export default function EventPage() {
                     </ul>
                     <div className="flex gap-4">
                       <Link
-                        to="/"
+                        to="https://forms.gle/sajMGmmqztN9kHh5A"
                         className="inline-flex items-center justify-center px-4 py-3 rounded-lg text-black font-medium transition duration-500"
                         style={{
                           backgroundColor: themeColor,

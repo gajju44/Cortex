@@ -100,7 +100,8 @@ function EventDetails() {
                   transition={{ delay: 0.5 }}
                   className="flex gap-4"
                 >
-                  <button
+                  <a
+                  href="https://forms.gle/sajMGmmqztN9kHh5A"
                     className="px-6 py-3 rounded-lg font-semibold transition-all duration-200"
                     style={{
                       backgroundColor: event.ThemeColor,
@@ -108,11 +109,11 @@ function EventDetails() {
                     }}
                   >
                     Register Now
-                  </button>
-                  <button className="px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-200 hover:bg-white/10"
+                  </a>
+                  {/* <button className="px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-200 hover:bg-white/10"
                     style={{ borderColor: event.ThemeColor, color: event.ThemeColor }}>
                     Learn More
-                  </button>
+                  </button> */}
                 </motion.div>
               </div>
               <motion.div
