@@ -8,7 +8,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <div className='flex  h-20 z-50 md:border-t-[12px] border-black bg-black md:bg-transparent px-5  md:px-10 w-full items-center justify-between md:justify-start fixed inset-0 top-0 left-0 '>
+    <div className='flex  h-20 z-50 md:border-t-[12px] border-black bg-black md:bg-transparent border-x-[20px]  md:border-x-[40px] w-full items-center justify-between md:justify-start fixed inset-0 top-0 left-0 '>
       
       <Icon_Component/>
       <Navbar_Component/>

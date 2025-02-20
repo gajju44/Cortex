@@ -8,7 +8,7 @@ function Navbar_Component() {
    <>
    
         <div className=' hidden md:flex items-center gap-4 mt-2 w-fit px-4 h-[58px] backdrop-blur-xl rounded-[50px] bg-[#ffffff41] border-[1px] border-[#d1d5db80] shadow-2xl shadow-[#00000026] '>
-            <a href=''>Events</a>
+            <a href='/events'>Events</a>
             <a href=''>About Us</a>
             <a href=''>Our Team</a>
             <a href=''>Developers</a>

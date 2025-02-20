@@ -1,16 +1,18 @@
-// import React from 'react'
+import {useState} from 'react'
 import Navbar from '../Navbar/Navbar'
 import Iridescence from './Iridescence'
 import CircleCrousel from './CircleCrousel';
-import ReactLogo from '../../assets/React.svg'
 import ChallangeX from '../../assets/Events/ChallangeX.svg'
 import { ArrowUpRight } from 'lucide-react';
 import CornerSvg from '../../assets/CornerSvg.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Events } from '../EventPage/EventsData';
 
 function HeroSection() {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const sliderSettings = {
     dots: true,
@@ -26,6 +28,9 @@ function HeroSection() {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    beforeChange: (oldIndex, newIndex) => {
+      setCurrentSlide(newIndex); // Update the current slide index
+    },
   };
 
   return (
@@ -61,38 +66,39 @@ function HeroSection() {
 
 <div className='flex flex-col custom-carousel items-center w-full justify-center relative bg-[#5d55fa]  p-4 rounded-3xl text-white '>
 
-{/* <Slider {...sliderSettings} className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'> */}
+{Events.length > 1 ? 
+  <Slider {...sliderSettings} className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'>
+{Events.map((event,index)=>(
+
+
+<div  key={index} className='!flex flex-col  gap-4'>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>{event.Tagline}</p>
+</div>
+
+))}
+</Slider>
+:
+
 <div className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'>
 
-
 <div className='!flex flex-col  gap-4'>
-<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
-<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
+<img src={Events[0].Image} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>{Events[0].Tagline}</p>
 </div>
-{/* <div className='!flex flex-col  gap-4'>
-<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
-<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
-</div> */}
-{/* <div className='!flex flex-col  gap-4'>
-<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
-<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
-</div>
-<div className='!flex flex-col  gap-4'>
-<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
-<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
-</div> */}
 
+</div>}
 
-</div>
 
 <div className='absolute lg:translate-x-[1px]  -bottom-2 bg-black p-2 rounded-ss-[34px] right-0 '>
-<div className='flex items-center border-2 border-white relative justify-center p-3 bg-black rounded-full'>
+<a  href={`/events-details?Data=${encodeURIComponent(JSON.stringify(Events[currentSlide]))}`} className='flex items-center border-2 border-white relative justify-center p-3 bg-black rounded-full'>
 <ArrowUpRight/>
 <img src={CornerSvg} alt="" className=' absolute -bottom-[3px] rotate-180 -left-[39px]' />
 <img src={CornerSvg} alt="" className=' absolute -top-[39px] rotate-180 -right-[10px]' />
 
+</a>
 </div>
-</div>
+
 </div>
 
 </div>
