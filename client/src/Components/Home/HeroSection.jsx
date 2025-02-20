@@ -61,28 +61,29 @@ function HeroSection() {
 
 <div className='flex flex-col custom-carousel items-center w-full justify-center relative bg-[#5d55fa]  p-4 rounded-3xl text-white '>
 
-<Slider {...sliderSettings} className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'>
+{/* <Slider {...sliderSettings} className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'> */}
+<div className=' w-full pb-10 lg:pb-0 lg:h-[50vh]'>
 
 
 <div className='!flex flex-col  gap-4'>
 <img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
 <p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
-<div className='!flex flex-col  gap-4'>
+{/* <div className='!flex flex-col  gap-4'>
+<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
+<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
+</div> */}
+{/* <div className='!flex flex-col  gap-4'>
 <img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
 <p className='text-2xl p-1'>Stop Talking,Start Wining</p>
 </div>
 <div className='!flex flex-col  gap-4'>
 <img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
 <p className='text-2xl p-1'>Stop Talking,Start Wining</p>
-</div>
-<div className='!flex flex-col  gap-4'>
-<img src={ChallangeX} alt="" className='bg-black rounded-2xl p-1 ' />
-<p className='text-2xl p-1'>Stop Talking,Start Wining</p>
-</div>
+</div> */}
 
 
-</Slider>
+</div>
 
 <div className='absolute lg:translate-x-[1px]  -bottom-2 bg-black p-2 rounded-ss-[34px] right-0 '>
 <div className='flex items-center border-2 border-white relative justify-center p-3 bg-black rounded-full'>
