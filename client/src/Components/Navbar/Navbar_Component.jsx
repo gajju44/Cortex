@@ -11,7 +11,7 @@ function Navbar_Component() {
             <a href='/events'>Events</a>
             <a href=''>About Us</a>
             <a href=''>Our Team</a>
-            <a href=''>Developers</a>
+            <a href='#Devs'>Developers</a>
             <button onClick={()=>setTheme(Theme === 'light' ? 'dark' : 'light')} className='aspect-square transition duration-500   rounded-full p-2 ml-3 flex items-center justify-center border border-black '>
             {Theme === 'light' ?  <SunMedium size={24} fill='black' />
               : <MoonIcon size={24} fill='black' />}

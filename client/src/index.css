@@ -16,6 +16,13 @@ body{
    
   }
 
+  *{
+    scrollbar-width: thin;
+    user-select: text;
+    -moz-user-select: text;
+    scroll-behavior: smooth;
+  }
+
 .custom-dot {
     width: 25px;
     height: 6px;
