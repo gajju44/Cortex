@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Github, Linkedin, Instagram, Mail, ExternalLink } from "lucide-react"
 import Gajendra from '../../assets/Devs/Gajendra.png'
+import Ankit from '../../assets/Devs/Ankit.jpeg'
 const developers = [
   {
     name: "Jitesh Varade",
@@ -10,10 +11,10 @@ const developers = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Passionate about creating seamless user experiences and scalable backend solutions. Specialized in React and Node.js ecosystems.",
     skills: ["React", "Node.js", "TypeScript", "AWS"],
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    Instagram: "https://Instagram.com",
-    email: "alex@example.com",
+    github: "https://github.com/jiteshvarade",
+    linkedin: "https://www.linkedin.com/in/jiteshvarade/",
+    Instagram: "https://www.instagram.com/jiteshvarade/",
+    email: "jiteshvarade1@gmail.com",
     // portfolio: "https://portfolio.com",
   },
   {
@@ -31,13 +32,13 @@ const developers = [
   {
     name: "Ankit Katole",
     role: "Backend Developer",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Architecture enthusiast focusing on building robust and scalable backend systems. Expert in microservices and cloud solutions.",
-    skills: ["Postman", "Node.js", "MongoDB","Express.s"],
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    Instagram: "https://Instagram.com",
-    email: "michael@example.com",
+    image: Ankit,
+    bio: "Back-end developer with skills in API design, Node.js, Express.js, MongoDB, and SQL. Exploring blockchain and Web3 to enhance expertise.",
+    skills: ["Postman", "Node.js", "MongoDB","Express.js"],
+    github: "https://github.com/ankitkatole",
+    linkedin: "https://www.linkedin.com/in/ankitkatole/",
+    Instagram: "https://www.instagram.com/ank.xious/",
+    email: "katoleankit06@gmail.com",
     // portfolio: "https://portfolio.com",
   },
 ]
@@ -84,11 +85,11 @@ export default function DevelopersPage() {
           {developers.map((dev, index) => (
             <motion.div key={index} variants={item} className="relative ">
               <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br group from-gray-900 to-black border border-[#8750f7]/30 p-6 transition-all duration-500 hover:border-[#8750f7] hover:shadow-[0_0_30px_#8750f7]">
-                <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-[#8750f7] shadow-[0_0_1px_#8750f7] transition-shadow duration-500 group-hover:shadow-[0_0_20px_#8750f7]">
+                <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-[#4f24a7] shadow-[0_0_1px_#8750f7] transition-shadow duration-500 group-hover:shadow-[0_0_20px_#8750f7]">
                   <img src={dev.image || "/placeholder.svg"} alt={dev.name}  className="object-cover" />
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#8750f7] mb-2 text-center">{dev.name}</h2>
+                <h2 className="text-2xl font-bold text-gray-300 mb-2 text-center">{dev.name}</h2>
                 <p className="text-gray-400 text-center mb-4">{dev.role}</p>
                 <p className="text-gray-500 text-center mb-6">{dev.bio}</p>
 
