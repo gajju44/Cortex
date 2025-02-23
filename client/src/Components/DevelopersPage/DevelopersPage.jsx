@@ -4,11 +4,12 @@ import { motion } from "framer-motion"
 import { Github, Linkedin, Instagram, Mail, ExternalLink } from "lucide-react"
 import Gajendra from '../../assets/Devs/Gajendra.png'
 import Ankit from '../../assets/Devs/Ankit.jpeg'
+import Jitesh from '../../assets/Devs/Jitesh.jpeg'
 const developers = [
   {
     name: "Jitesh Varade",
     role: "Full Stack Developer",
-    image: "/placeholder.svg?height=400&width=400",
+    image: Jitesh,
     bio: "Passionate about creating seamless user experiences and scalable backend solutions. Specialized in React and Node.js ecosystems.",
     skills: ["React", "Node.js", "TypeScript", "AWS"],
     github: "https://github.com/jiteshvarade",
